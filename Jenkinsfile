@@ -1,5 +1,14 @@
 node
 {
 	checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/voytlogin/jenkinstest.git']]])
-	echo 'Hello World'
+	
+	stage('stage 1') 
+	{
+		echo 'Hello World'
+	}
+
+	stage('stage 2') 
+	{
+		echo 'stage 2'
+	}
 }
