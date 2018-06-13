@@ -1,6 +1,6 @@
 node
 {
-	checkout([$class: 'GitSCM', branches: [[name: '*/mastero']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/voytlogin/jenkinstest.git']]])
+	checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/voytlogin/jenkinstest.git']]])
 	
 	stage('stage 1') 
 	{
