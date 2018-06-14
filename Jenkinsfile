@@ -4,7 +4,7 @@ node
 	
 	stage('stage 1') 
 	{
-		bat 'mkdir(dir:"dirName") '
+		bat 'mkdir www'
 		echo 'Hello World %WORKSPACE%'
 	}
 
